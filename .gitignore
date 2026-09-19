@@ -1,0 +1,45 @@
+# ProactiveGuard — Git Ignore
+# ============================
+# These files will NOT be uploaded to GitHub
+
+# Environment — contains API keys, never share
+.env
+
+# Python virtual environment
+proactiveguard_env/
+pg_v2_env/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Trained model files (regenerable by running the pipeline)
+models/*
+!models/.gitkeep
+
+# Generated datasets (regenerable by running v2_data_engine.py)
+data/*
+!data/.gitkeep
+
+# Generated charts, PDF reports, FMEA docs (regenerable)
+outputs/*
+!outputs/.gitkeep
+
+# Database — contains simulated worker data, regenerable
+*.db
+*.sqlite
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Streamlit secrets - NEVER push
+.streamlit/secrets.toml

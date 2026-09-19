@@ -1,0 +1,23 @@
+# ProactiveGuard v2.0 — Streamlit configuration
+# Theme matches the dashboard's own injected CSS (dark control-room
+# aesthetic) so the native Streamlit chrome doesn't clash with it.
+
+[theme]
+base = "dark"
+primaryColor = "#e74c3c"
+backgroundColor = "#0a0e1a"
+secondaryBackgroundColor = "#0d1117"
+textColor = "#ecf0f1"
+font = "sans serif"
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 10
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
