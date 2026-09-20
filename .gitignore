@@ -43,3 +43,6 @@ Thumbs.db
 
 # Streamlit secrets - NEVER push
 .streamlit/secrets.toml
+
+!models/*.pkl
+!models/*.json
